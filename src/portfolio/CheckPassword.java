@@ -13,10 +13,10 @@ public class CheckPassword {
 		String filename = "passwords.txt";
 		File file = new File(filename);
 		String[] passwords = new String[13];
-		boolean hasNumber;
-		boolean hasLetter;
-		boolean hasSpecialChar;
-		boolean hasInvalidChar;
+		boolean hasNumber = false;
+		boolean hasLetter = false;
+		boolean hasSpecialChar = false;
+		boolean hasInvalidChar = false;
 
 		BufferedReader br = new BufferedReader(new FileReader(file));
 
@@ -27,20 +27,33 @@ public class CheckPassword {
 		br.close();
 
 		for (String password : passwords) {
-			System.out.println(password);
+			System.out.println("*****************\n" + password);
 
 			for (int k = 0; k < password.length(); k++) {
 				if ("0123456789".contains(password.substring(k, k + 1))) {
-					System.out.println("Position " + (k+1) + " contains number.");
-				} else if ("abcdefghijklmnopqrstuvwxyz".contains(password.substring(k, k + 1))) {
-					System.out.println("Position " + (k+1) + " contains letter.");
-				} else if ("()!@#$%".contains(password.substring(k, k + 1))) {
-					System.out.println("Position " + (k+1) + " contains special character.");
+					hasNumber = true;
+					// System.out.println("Position " + (k + 1) + " contains number.");
+				} else if ("abcdefghijklmnopqrstuvwxyz".contains(password.substring(k, k + 1).toLowerCase())) {
+					hasLetter = true;
+					// System.out.println("Position " + (k + 1) + " contains letter.");
+				} else if ("!@#$%^&*()-_=+".contains(password.substring(k, k + 1))) {
+					hasSpecialChar = true;
+					// System.out.println("Position " + (k + 1) + " contains special character.");
 				} else {
-					System.out.println("Position " + (k+1) + " contains invalid character.");
+					hasInvalidChar = true;
+					// System.out.println("Position " + (k + 1) + " contains invalid character.");
 				}
 			}
-		}
-	}
 
+			if (!hasInvalidChar) {
+				System.out.println("Invalid character");
+			} else if (!hasNumber || !hasLetter || !hasSpecialChar) {
+				System.out.println("Missing criteria");
+			} else {
+				System.out.println("Valid password");
+			}
+
+		}
+
+	}
 }
