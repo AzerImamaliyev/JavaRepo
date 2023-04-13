@@ -12,15 +12,11 @@ public class CheckPassword {
 	public static void main(String[] args) throws IOException {
 		String filename = "passwords.txt";
 		File file = new File(filename);
-		String[] passwords = new String[13];
-		boolean hasNumber = false;
-		boolean hasLetter = false;
-		boolean hasSpecialChar = false;
-		boolean hasInvalidChar = false;
+		String[] passwords = new String[14];
 
 		BufferedReader br = new BufferedReader(new FileReader(file));
 
-		for (int i = 0; i < 13; i++) {
+		for (int i = 0; i < 14; i++) {
 			passwords[i] = br.readLine();
 
 		}
@@ -28,6 +24,11 @@ public class CheckPassword {
 
 		for (String password : passwords) {
 			System.out.println("*****************\n" + password);
+
+			boolean hasNumber = false;
+			boolean hasLetter = false;
+			boolean hasSpecialChar = false;
+			boolean hasInvalidChar = false;
 
 			for (int k = 0; k < password.length(); k++) {
 				if ("0123456789".contains(password.substring(k, k + 1))) {
@@ -45,11 +46,11 @@ public class CheckPassword {
 				}
 			}
 
-			if (!hasInvalidChar) {
+			if (hasInvalidChar) {
 				System.out.println("Invalid character");
 			} else if (!hasNumber || !hasLetter || !hasSpecialChar) {
 				System.out.println("Missing criteria");
-			} else {
+			} else if (hasNumber || !hasLetter || !hasSpecialChar) {
 				System.out.println("Valid password");
 			}
 
