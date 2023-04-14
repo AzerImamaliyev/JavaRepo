@@ -5,9 +5,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-import sun.security.util.Password;
-
 public class CheckPassword {
+	int c;
 
 	public static void main(String[] args) throws IOException {
 		String filename = "passwords.txt";
