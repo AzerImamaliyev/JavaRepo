@@ -3,7 +3,10 @@ package datastructures;
 import java.util.HashSet;
 
 public class Sets {
-
+	/*
+	 * LinkedHashSet - in order that they were added 
+	 * HashSet - complete random order
+	 * TreeSet - alphabetical order*/
 	public static void main(String[] args) {
 		// 1. Define the collections
 		HashSet<String> animals = new HashSet<String>();
