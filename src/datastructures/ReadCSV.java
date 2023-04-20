@@ -5,9 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
-
-import com.sun.org.apache.bcel.internal.generic.ACONST_NULL;
 
 public class ReadCSV {
 
