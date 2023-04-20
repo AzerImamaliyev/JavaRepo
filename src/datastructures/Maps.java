@@ -15,6 +15,8 @@ public class Maps {
 		people.put("Angie", 33);
 		people.put("Angie", 33);
 
+		System.out.println(people);
+
 		for (String i : people.keySet()) {
 			System.out.println("Name: " + i + "; Age: " + people.get(i));
 		}
