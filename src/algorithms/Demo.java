@@ -6,7 +6,7 @@ public class Demo {
 
 		// Linear Search
 		System.out.println("Linear Search");
-		int[] numbers = { 10, 25, 433, 26, 73, 132, 5 };
+		int[] numbers = { 10, 7, 433, 95, 73, 132, 5 };
 
 		int pos = algorithms.Search.linearSearchFunc(numbers, 66);
 
@@ -26,6 +26,10 @@ public class Demo {
 
 		int index = algorithms.Search.BinarySearchFunc(sortedNumbers, 37, 0, sortedNumbers.length - 1);
 		System.out.println("Found at position: " + index);
+
+		// Bubble sort
+		System.out.println("\nBubble Sort");
+		Sort.bubbleSort(numbers);
 
 	}
 
