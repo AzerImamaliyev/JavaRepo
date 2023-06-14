@@ -3,7 +3,7 @@ package portfolio;
 public class PrimeNumbers {
 
 	public static void main(String[] args) {
-		checkIfPrime(147);
+		checkIfPrime(11);
 	}
 
 	private static void checkIfPrime(int num) {
