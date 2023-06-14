@@ -20,17 +20,21 @@ public class EmailApp {
 	public static void main(String[] args) {
 		Email email = new Email("Azer", "Imamaliyev");
 
+		// Show User Info
+		System.out.println(email.showInfo());
+		System.out.println("**************************************************");
+
 		// Setting and getting new password
 		email.setNewPassword("Azer2023#");
-		System.out.println("Your new password is: " + email.getNewPassword());
+		System.out.println("New password: " + email.getNewPassword());
 
 		// Setting and getting alternate email
 		email.setAlternateEMail("azer.imamaliyev@gmail.com");
-		System.out.println("Your alternate email is: " + email.getAlternateEMail());
+		System.out.println("Alternate email: " + email.getAlternateEMail());
 
 		// Setting and getting mailbox capacity
 		email.setMailboxCapacity(850);
-		System.out.println("Your mailbox capacity is: " + email.getMailboxCapacity() + "MB");
+		System.out.println("Updated mailbox capacity: " + email.getMailboxCapacity() + "MB");
 
 	}
 
