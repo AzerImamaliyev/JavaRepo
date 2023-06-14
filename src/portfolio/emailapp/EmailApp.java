@@ -1,4 +1,4 @@
-package emailapp;
+package portfolio.emailapp;
 
 /*
  * Email Application

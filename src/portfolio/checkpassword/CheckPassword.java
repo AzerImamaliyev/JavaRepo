@@ -1,4 +1,4 @@
-package portfolio;
+package portfolio.checkpassword;
 
 import java.io.BufferedReader;
 import java.io.File;
