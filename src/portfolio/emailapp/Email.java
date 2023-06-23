@@ -44,7 +44,7 @@ public class Email {
 
 		// Combine elements to generate an email
 		email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companySuffix;
-		//System.out.println("Your email is: " + email);
+		// System.out.println("Your email is: " + email);
 	}
 
 	// Ask for the department
