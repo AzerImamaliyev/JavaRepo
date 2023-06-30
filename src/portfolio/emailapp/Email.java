@@ -16,6 +16,7 @@ import java.util.Scanner;
  * Have get methods to display the name, email, and mailbox capacity
  * 
 */
+
 public class Email {
 
 	private String firstName;
