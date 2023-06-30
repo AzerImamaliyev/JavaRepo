@@ -1,4 +1,4 @@
-package portfolio;
+package portfolio.tictactoe;
 
 import java.util.Scanner;
 

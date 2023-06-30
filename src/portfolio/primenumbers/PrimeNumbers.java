@@ -1,9 +1,9 @@
-package portfolio;
+package portfolio.primenumbers;
 
 public class PrimeNumbers {
 
 	public static void main(String[] args) {
-		checkIfPrime(11);
+		checkIfPrime(27);
 	}
 
 	private static void checkIfPrime(int num) {
