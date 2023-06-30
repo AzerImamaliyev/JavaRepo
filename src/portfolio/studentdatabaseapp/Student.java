@@ -35,6 +35,7 @@ public class Student {
 	private static int id = 1000;
 
 	// Constructor: prompt user to enter student's name and year
+	
 	public Student() {
 		System.out.println("*****************************************");
 		Scanner in = new Scanner(System.in);
