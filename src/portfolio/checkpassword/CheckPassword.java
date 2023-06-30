@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class CheckPassword {
 	int c;
-
+		
 	public static void main(String[] args) throws IOException {
 		String filename = "passwords.txt";
 		File file = new File(filename);
