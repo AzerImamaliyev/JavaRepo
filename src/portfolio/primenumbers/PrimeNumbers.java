@@ -5,7 +5,8 @@ public class PrimeNumbers {
 	public static void main(String[] args) {
 		checkIfPrime(27);
 	}
-
+	
+	// Method for checking if the number is prime
 	private static void checkIfPrime(int num) {
 		int reminderCounter = 0;
 		String message = " is a prime number";
