@@ -5,10 +5,10 @@ import static java.lang.System.out;
 
 public class JdbcExample {
 
-	public static final String DBURL = "jdbc:oracle:thin:@10.220.1.239:1521/CLOUDDB.azerconnect.az";
+	public static final String DBURL = "jdbc:oracle:thin:@localhost:1521/CLOUDDB.testdb.az";
 	// public static final String DBURL = "jdbc:mysql://localhost:3306/DB_NAME";
 	public static final String DBUSER = "dba_maintenance";
-	public static final String DBPASS = "Dba%Ma!n7enance321";
+	public static final String DBPASS = "Dbaw34ef24nce321";
 
 	public static void main(String args[]) {
 		try {
